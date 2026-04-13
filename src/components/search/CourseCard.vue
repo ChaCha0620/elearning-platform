@@ -65,8 +65,12 @@ function handleClick() {
       <div v-if="matchInfo && matchInfo.isTop" class="absolute right-3 top-3">
         <span class="rounded bg-[#1B3A5C] px-2 py-1 text-[10px] font-bold text-white shadow-sm">⭐ 最推薦</span>
       </div>
-      <div v-else-if="matchInfo && matchInfo.matchPercent > 30" class="absolute right-3 top-3">
+      <div v-else-if="matchInfo && matchInfo.matchPercent >= 60" class="absolute right-3 top-3">
         <span class="rounded bg-[#3672B5] px-2 py-1 text-[10px] font-bold text-white shadow-sm">符合度 {{
+          matchInfo.matchPercent }}%</span>
+      </div>
+      <div v-else-if="matchInfo && matchInfo.matchPercent >= 20" class="absolute right-3 top-3">
+        <span class="rounded bg-[#94A3B8] px-2 py-1 text-[10px] font-bold text-white shadow-sm">符合度 {{
           matchInfo.matchPercent }}%</span>
       </div>
       <div v-else-if="course.isHot" class="absolute right-3 top-3">

@@ -452,13 +452,13 @@ function calculateCareerResult() {
 
   const results = scored.map(s => {
     const raw = s.score / maxScore
-    // Use wider range: top courses get 85-99, low matches get 30-55
-    const matchPercent = Math.round(30 + raw * 69)
-    return { courseId: s.courseId, matchPercent: Math.min(99, Math.max(matchPercent, 20)), isTop: false }
+    // Wider spread: top courses get 90-99, mid 40-70, low 5-25
+    const matchPercent = Math.round(5 + raw * raw * 94)
+    return { courseId: s.courseId, matchPercent: Math.min(99, Math.max(matchPercent, 5)), isTop: false }
   })
 
   results.sort((a, b) => b.matchPercent - a.matchPercent)
-  results.forEach(r => { r.isTop = r.matchPercent > 95 })
+  if (results.length > 0) results[0].isTop = true
 
   diagnosisResult.value = { type: 'career', items: results }
   emit('result', diagnosisResult.value)
@@ -495,21 +495,21 @@ function calculateCssResult() {
     let matchPercent = 40
 
     if (level === 'beginner') {
-      if (isCss && course.level === '基礎') matchPercent = 90 + idVariation(course.id, 8)
-      else if (course.level === '基礎') matchPercent = 70 + idVariation(course.id, 12)
-      else if (course.level === '進階' && isCss) matchPercent = 50 + idVariation(course.id, 10)
-      else matchPercent = 25 + idVariation(course.id, 15)
+      if (isCss && course.level === '基礎') matchPercent = 92 + idVariation(course.id, 7)
+      else if (course.level === '基礎') matchPercent = 50 + idVariation(course.id, 15)
+      else if (course.level === '進階' && isCss) matchPercent = 30 + idVariation(course.id, 10)
+      else matchPercent = 5 + idVariation(course.id, 10)
     } else if (level === 'intermediate') {
-      if (isCss && course.level === '進階') matchPercent = 88 + idVariation(course.id, 10)
-      else if (isCss && course.level === '基礎') matchPercent = 65 + idVariation(course.id, 10)
-      else if (course.level === '進階') matchPercent = 60 + idVariation(course.id, 12)
-      else if (course.module === '實戰' && isCss) matchPercent = 75 + idVariation(course.id, 10)
-      else matchPercent = 30 + idVariation(course.id, 15)
+      if (isCss && course.level === '進階') matchPercent = 90 + idVariation(course.id, 8)
+      else if (isCss && course.level === '基礎') matchPercent = 55 + idVariation(course.id, 10)
+      else if (course.level === '進階') matchPercent = 45 + idVariation(course.id, 15)
+      else if (course.module === '實戰' && isCss) matchPercent = 60 + idVariation(course.id, 10)
+      else matchPercent = 8 + idVariation(course.id, 12)
     } else {
       if (isCss && (course.module === '實戰' || course.level === '進階')) matchPercent = 90 + idVariation(course.id, 8)
-      else if (course.module === '實戰') matchPercent = 72 + idVariation(course.id, 12)
-      else if (course.level === '進階') matchPercent = 60 + idVariation(course.id, 12)
-      else matchPercent = 20 + idVariation(course.id, 15)
+      else if (course.module === '實戰') matchPercent = 55 + idVariation(course.id, 15)
+      else if (course.level === '進階') matchPercent = 40 + idVariation(course.id, 12)
+      else matchPercent = 5 + idVariation(course.id, 10)
     }
 
     matchPercent = Math.min(99, matchPercent)
@@ -517,7 +517,7 @@ function calculateCssResult() {
   })
 
   scored.sort((a, b) => b.matchPercent - a.matchPercent)
-  scored.forEach(s => { s.isTop = s.matchPercent > 95 })
+  if (scored.length > 0) scored[0].isTop = true
 
   diagnosisResult.value = {
     type: 'css', correct, total: cssQuestions.length,
@@ -551,8 +551,8 @@ const showCssReview = ref(false)
   <!-- Idle -->
   <Transition enter-active-class="transition duration-300 ease-out" enter-from-class="opacity-0 translate-y-2"
     enter-to-class="opacity-100 translate-y-0">
-    <div v-if="phase === 'idle' && quizType"
-      class="relative overflow-hidden rounded-2xl border border-dashed border-[#C5CAD3] bg-gradient-to-r from-[#EEF2F7] to-[#F8F9FA] px-7 py-6">
+    <div v-if="phase === 'idle' && quizType" @click="startQuiz"
+      class="relative cursor-pointer overflow-hidden rounded-2xl border border-dashed border-[#C5CAD3] bg-gradient-to-r from-[#EEF2F7] to-[#F8F9FA] px-7 py-6 transition-all duration-200 hover:border-[#1B3A5C]/40 hover:shadow-md">
       <div class="flex items-center justify-between gap-6">
         <div class="flex items-center gap-4">
           <div class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-[#1B3A5C]/10">
@@ -563,10 +563,10 @@ const showCssReview = ref(false)
             <p class="mt-0.5 text-[13px] text-[#666]">讓我們用小測驗幫你找到最適合的課程</p>
           </div>
         </div>
-        <button @click="startQuiz"
-          class="shrink-0 rounded-lg bg-[#1B3A5C] px-5 py-2.5 text-[13px] font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#17314d] hover:shadow-lg active:translate-y-0">
+        <span
+          class="shrink-0 rounded-lg bg-[#1B3A5C] px-5 py-2.5 text-[13px] font-semibold text-white transition-all duration-200 group-hover:-translate-y-0.5 group-hover:shadow-lg">
           開始診斷
-        </button>
+        </span>
       </div>
       <div class="absolute -right-4 -top-4 size-24 rounded-full bg-[#1B3A5C]/5"></div>
       <div class="absolute -bottom-6 -right-6 size-16 rounded-full bg-[#3672B5]/5"></div>

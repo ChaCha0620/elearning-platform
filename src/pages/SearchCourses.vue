@@ -108,11 +108,11 @@ const learningPaths = {
     bundleSave: '省 NT$7,700',
     bundleCount: 21,
     roadmap: [
-      { stage: '階段一', title: '網頁基礎', icon: 'fa-solid fa-code', desc: '掌握 HTML 語義化結構與 CSS 佈局技巧，學會 Flexbox / Grid 完成響應式網頁切版。', skills: ['HTML5 語義化', 'CSS Flexbox / Grid', '響應式設計'], color: '#3B82F6' },
-      { stage: '階段二', title: 'JavaScript 核心', icon: 'fa-brands fa-js', desc: '深入 ES6+ 語法、非同步處理與模組化開發，為框架學習打下堅實基礎。', skills: ['ES6+ 語法', 'Promise / async-await', '模組化開發'], color: '#2563EB' },
-      { stage: '階段三', title: '前端框架', icon: 'fa-solid fa-cubes', desc: '學習 React 或 Vue 框架，掌握元件開發、狀態管理與路由配置，建構現代化 SPA 應用。', skills: ['React / Vue', '狀態管理', '路由配置'], color: '#1D4ED8' },
-      { stage: '階段四', title: '進階工程化', icon: 'fa-solid fa-gears', desc: '學習 TypeScript 型別系統、自動化測試與效能優化，提升程式碼品質與團隊協作效率。', skills: ['TypeScript', '自動化測試', '效能優化'], color: '#1E40AF' },
-      { stage: '階段五', title: '實戰專案', icon: 'fa-solid fa-rocket', desc: '整合所學技能完成完整專案，包含 CI/CD 部署與作品集製作，具備求職即戰力。', skills: ['全端整合', 'CI/CD 部署', '作品集'], color: '#1B3A5C' }
+      { stage: '階段一', title: '網頁基礎', icon: 'fa-solid fa-laptop-code', desc: '掌握 HTML 語義化結構與 CSS 佈局技巧，學會 Flexbox / Grid 完成響應式網頁切版。', skills: ['HTML/CSS 與網頁切版', 'Bootstrap 響應式佈局', 'Tailwind CSS 實用開發'], color: '#06B6D4' },
+      { stage: '階段二', title: 'JavaScript 核心', icon: 'fa-brands fa-js', desc: '深入 ES6+ 語法、非同步處理與模組化開發，為框架學習打下堅實基礎。', skills: ['JavaScript 核心語法與非同步', 'React 基礎與元件開發', 'Vue 基礎與元件開發'], color: '#0891B2' },
+      { stage: '階段三', title: '前端框架', icon: 'fa-solid fa-layer-group', desc: '學習 React 或 Vue 框架，掌握元件開發、狀態管理與路由配置，建構現代化 SPA 應用。', skills: ['React 狀態管理與系統架構', 'Vue 進階：Composition API 與 Pinia', 'Next.js 全端框架開發'], color: '#0E7490' },
+      { stage: '階段四', title: '進階工程化', icon: 'fa-solid fa-screwdriver-wrench', desc: '學習 TypeScript 型別系統、自動化測試與效能優化，提升程式碼品質與團隊協作效率。', skills: ['TypeScript 全面入門與實戰', 'CSS 進階：動畫、變數與架構設計', '前端效能優化與部署'], color: '#155E75' },
+      { stage: '階段五', title: '實戰專案', icon: 'fa-solid fa-fire', desc: '整合所學技能完成完整專案，包含 CI/CD 部署與作品集製作，具備求職即戰力。', skills: ['📦 8 個實戰專案', '🔧 全端整合與 CI/CD', '🎨 作品集與求職準備'], color: '#134E4A' }
     ]
   },
   'UI/UX 設計': {
@@ -129,11 +129,11 @@ const learningPaths = {
     bundleSave: '省 NT$6,700',
     bundleCount: 21,
     roadmap: [
-      { stage: '階段一', title: 'UX 研究基礎', icon: 'fa-solid fa-users', desc: '學習使用者訪談、問卷設計與競品分析，建立以用戶為中心的設計思維。', skills: ['使用者訪談', '問卷設計', '競品分析'], color: '#A78BFA' },
-      { stage: '階段二', title: 'UI 設計工具', icon: 'fa-solid fa-pen-ruler', desc: '精通 Figma 操作，包含元件設計、Auto Layout 與原型互動，快速產出高保真設計稿。', skills: ['Figma 精通', 'Auto Layout', '原型互動'], color: '#8B5CF6' },
-      { stage: '階段三', title: '設計系統', icon: 'fa-solid fa-swatchbook', desc: '建立可擴展的設計系統，統一色彩、字型、元件規範，確保跨頁面一致性。', skills: ['Design Token', '元件規範', '設計文件'], color: '#7C3AED' },
-      { stage: '階段四', title: '原型測試與迭代', icon: 'fa-solid fa-flask-vial', desc: '運用可用性測試、A/B 測試收集數據回饋，持續迭代優化產品體驗。', skills: ['可用性測試', 'A/B 測試', '數據驅動迭代'], color: '#6D28D9' },
-      { stage: '階段五', title: '實戰專案', icon: 'fa-solid fa-rocket', desc: '從需求分析到設計交付的完整流程，製作專業作品集與 Case Study。', skills: ['完整設計流程', '設計交付', '作品集'], color: '#5B21B6' }
+      { stage: '階段一', title: 'UX 研究基礎', icon: 'fa-solid fa-magnifying-glass', desc: '學習使用者訪談、問卷設計與競品分析，建立以用戶為中心的設計思維。', skills: ['UI/UX 設計基礎概論', '使用者研究方法論', 'UX 寫作與內容策略'], color: '#A78BFA' },
+      { stage: '階段二', title: 'UI 設計工具', icon: 'fa-brands fa-figma', desc: '精通 Figma 操作，包含元件設計、Auto Layout 與原型互動，快速產出高保真設計稿。', skills: ['Figma 介面設計入門', '設計原則與色彩學', 'Wireframe 與資訊架構'], color: '#8B5CF6' },
+      { stage: '階段三', title: '設計系統', icon: 'fa-solid fa-object-group', desc: '建立可擴展的設計系統，統一色彩、字型、元件規範，確保跨頁面一致性。', skills: ['設計系統建構與管理', '進階 Figma：變數、條件元件與團隊協作', '動態設計與微互動'], color: '#7C3AED' },
+      { stage: '階段四', title: '原型測試與迭代', icon: 'fa-solid fa-vial', desc: '運用可用性測試、A/B 測試收集數據回饋，持續迭代優化產品體驗。', skills: ['互動原型與 Usability Testing', '無障礙設計 (Accessibility)', '設計思考與工作坊引導'], color: '#6D28D9' },
+      { stage: '階段五', title: '實戰專案', icon: 'fa-solid fa-briefcase', desc: '從需求分析到設計交付的完整流程，製作專業作品集與 Case Study。', skills: ['📦 6 個實戰專案', '📝 Case Study 撰寫', '🎨 作品集與面試準備'], color: '#5B21B6' }
     ]
   },
   '後端開發 (Back-end)': {
@@ -150,10 +150,10 @@ const learningPaths = {
     bundleSave: '省 NT$2,900',
     bundleCount: 9,
     roadmap: [
-      { stage: '階段一', title: 'Node.js 基礎', icon: 'fa-brands fa-node-js', desc: '學習 Node.js 執行環境、Express 框架與 RESTful API 設計原則。', skills: ['Node.js', 'Express', 'RESTful API'], color: '#3B82F6' },
-      { stage: '階段二', title: '資料庫設計', icon: 'fa-solid fa-database', desc: '掌握 SQL / NoSQL 資料庫設計，學會資料建模、查詢優化與 ORM 操作。', skills: ['SQL / PostgreSQL', 'MongoDB', 'ORM 操作'], color: '#2563EB' },
-      { stage: '階段三', title: '容器化與部署', icon: 'fa-solid fa-cloud-arrow-up', desc: '使用 Docker 容器化應用，搭配 CI/CD 流程實現自動化部署。', skills: ['Docker', 'CI/CD', '雲端部署'], color: '#1D4ED8' },
-      { stage: '階段四', title: '微服務架構', icon: 'fa-solid fa-diagram-project', desc: '設計微服務系統、訊息佇列與 API Gateway，打造可擴展的分散式架構。', skills: ['微服務設計', 'Message Queue', 'API Gateway'], color: '#1B3A5C' }
+      { stage: '階段一', title: 'Node.js 基礎', icon: 'fa-solid fa-server', desc: '學習 Node.js 執行環境、Express 框架與 RESTful API 設計原則。', skills: ['Node.js 基礎與伺服器概念', 'RESTful API 設計原則', 'SQL 資料庫設計與查詢'], color: '#059669' },
+      { stage: '階段二', title: '資料庫設計', icon: 'fa-solid fa-database', desc: '掌握 SQL / NoSQL 資料庫設計，學會資料建模、查詢優化與 ORM 操作。', skills: ['NoSQL 資料庫：MongoDB 實戰', '驗證與授權：JWT、OAuth 2.0'], color: '#047857' },
+      { stage: '階段三', title: '容器化與部署', icon: 'fa-brands fa-docker', desc: '使用 Docker 容器化應用，搭配 CI/CD 流程實現自動化部署。', skills: ['Docker 容器化與部署流程', '實戰：全端電商 API 開發'], color: '#065F46' },
+      { stage: '階段四', title: '微服務架構', icon: 'fa-solid fa-sitemap', desc: '設計微服務系統、訊息佇列與 API Gateway，打造可擴展的分散式架構。', skills: ['📦 3 個實戰專案', '🔧 微服務與分散式架構', '☁️ 雲端部署與應用監控'], color: '#064E3B' }
     ]
   },
   '資料科學 (Data Science)': {
@@ -170,10 +170,10 @@ const learningPaths = {
     bundleSave: '省 NT$3,100',
     bundleCount: 9,
     roadmap: [
-      { stage: '階段一', title: 'Python 程式基礎', icon: 'fa-brands fa-python', desc: '學習 Python 語法、資料結構與常用函式庫，建立程式設計基礎。', skills: ['Python 語法', '資料結構', 'Jupyter Notebook'], color: '#3B82F6' },
-      { stage: '階段二', title: '數據分析與視覺化', icon: 'fa-solid fa-chart-bar', desc: '使用 Pandas 與 Matplotlib 進行資料清洗、探索式分析與視覺化呈現。', skills: ['Pandas', 'Matplotlib', '探索式分析'], color: '#2563EB' },
-      { stage: '階段三', title: '統計與機器學習', icon: 'fa-solid fa-brain', desc: '掌握統計推論、迴歸分析與常用機器學習演算法，建立預測模型。', skills: ['統計推論', 'Scikit-learn', '模型評估'], color: '#1D4ED8' },
-      { stage: '階段四', title: '深度學習應用', icon: 'fa-solid fa-microchip', desc: '學習神經網路、CNN/RNN 架構與實務應用，解決影像辨識與自然語言處理問題。', skills: ['TensorFlow / PyTorch', 'CNN / RNN', 'NLP 應用'], color: '#1B3A5C' }
+      { stage: '階段一', title: 'Python 程式基礎', icon: 'fa-brands fa-python', desc: '學習 Python 語法、資料結構與常用函式庫，建立程式設計基礎。', skills: ['Python 程式設計入門', 'Pandas 資料處理與清洗', '統計學與資料視覺化'], color: '#7C3AED' },
+      { stage: '階段二', title: '數據分析與視覺化', icon: 'fa-solid fa-chart-column', desc: '使用 Pandas 與 Matplotlib 進行資料清洗、探索式分析與視覺化呈現。', skills: ['SQL 進階分析與資料倉儲', '實戰：資料儀表板與商業報表'], color: '#6D28D9' },
+      { stage: '階段三', title: '統計與機器學習', icon: 'fa-solid fa-robot', desc: '掌握統計推論、迴歸分析與常用機器學習演算法，建立預測模型。', skills: ['機器學習基礎：Scikit-learn', '實戰：電商用戶行為分析'], color: '#5B21B6' },
+      { stage: '階段四', title: '深度學習應用', icon: 'fa-solid fa-network-wired', desc: '學習神經網路、CNN/RNN 架構與實務應用，解決影像辨識與自然語言處理問題。', skills: ['📦 3 個實戰專案', '🧠 深度學習與 AI 應用', '📊 數據儀表板開發'], color: '#4C1D95' }
     ]
   },
   '平面設計 (Graphic Design)': {
@@ -190,10 +190,10 @@ const learningPaths = {
     bundleSave: '省 NT$2,700',
     bundleCount: 9,
     roadmap: [
-      { stage: '階段一', title: '設計原理', icon: 'fa-solid fa-palette', desc: '學習排版、色彩學與構圖基礎，建立扎實的視覺設計素養。', skills: ['排版原理', '色彩學', '構圖法則'], color: '#F472B6' },
-      { stage: '階段二', title: 'Adobe 工具精通', icon: 'fa-solid fa-pen-nib', desc: '精通 Illustrator 向量繪製與 Photoshop 影像處理，高效產出設計作品。', skills: ['Illustrator', 'Photoshop', '向量繪製'], color: '#EC4899' },
-      { stage: '階段三', title: '品牌識別設計', icon: 'fa-solid fa-stamp', desc: '從 Logo 設計到完整品牌視覺系統，學會建立一致的品牌形象。', skills: ['Logo 設計', '品牌規範', '視覺系統'], color: '#DB2777' },
-      { stage: '階段四', title: '商業實戰', icon: 'fa-solid fa-rocket', desc: '完成商業海報、社群素材與品牌專案，打造專業設計作品集。', skills: ['商業海報', '社群素材', '作品集'], color: '#BE185D' }
+      { stage: '階段一', title: '設計原理', icon: 'fa-solid fa-compass-drafting', desc: '學習排版、色彩學與構圖基礎，建立扎實的視覺設計素養。', skills: ['平面設計基礎與排版原理', 'Adobe Illustrator 入門', 'Adobe Photoshop 影像處理'], color: '#F472B6' },
+      { stage: '階段二', title: 'Adobe 工具精通', icon: 'fa-solid fa-bezier-curve', desc: '精通 Illustrator 向量繪製與 Photoshop 影像處理，高效產出設計作品。', skills: ['字體設計與 Typography', 'InDesign 排版與印刷實務'], color: '#EC4899' },
+      { stage: '階段三', title: '品牌識別設計', icon: 'fa-solid fa-copyright', desc: '從 Logo 設計到完整品牌視覺系統，學會建立一致的品牌形象。', skills: ['品牌識別設計系統', '實戰：品牌全套視覺設計'], color: '#DB2777' },
+      { stage: '階段四', title: '商業實戰', icon: 'fa-solid fa-wand-magic-sparkles', desc: '完成商業海報、社群素材與品牌專案，打造專業設計作品集。', skills: ['📦 3 個實戰專案', '🎨 商業設計與社群素材', '📚 專業作品集製作'], color: '#BE185D' }
     ]
   },
   '產品策略 (Product Strategy)': {
@@ -210,10 +210,10 @@ const learningPaths = {
     bundleSave: '省 NT$2,600',
     bundleCount: 9,
     roadmap: [
-      { stage: '階段一', title: 'PM 入門', icon: 'fa-solid fa-lightbulb', desc: '認識產品經理角色與職責，學習需求訪談、PRD 撰寫與優先級排序。', skills: ['PM 職責', 'PRD 撰寫', '需求排序'], color: '#FBBF24' },
-      { stage: '階段二', title: '市場研究', icon: 'fa-solid fa-magnifying-glass-chart', desc: '掌握市場調查方法、用戶畫像與商業模式分析，發掘產品機會點。', skills: ['市場調查', '用戶畫像', '商業模式'], color: '#F59E0B' },
-      { stage: '階段三', title: '敏捷開發', icon: 'fa-solid fa-arrows-spin', desc: '實踐 Scrum / Kanban 敏捷流程，學會 Sprint 規劃、站會與回顧。', skills: ['Scrum', 'Kanban', 'Sprint 規劃'], color: '#D97706' },
-      { stage: '階段四', title: '成長與營運', icon: 'fa-solid fa-chart-line', desc: '運用數據驅動成長策略，學習 A/B 測試、漏斗分析與用戶留存優化。', skills: ['Growth Hacking', '漏斗分析', '留存優化'], color: '#B45309' }
+      { stage: '階段一', title: 'PM 入門', icon: 'fa-solid fa-clipboard-list', desc: '認識產品經理角色與職責，學習需求訪談、PRD 撰寫與優先級排序。', skills: ['產品經理入門：角色與工作流程', '市場研究與競品分析', '需求文件與 User Story 撰寫'], color: '#FBBF24' },
+      { stage: '階段二', title: '市場研究', icon: 'fa-solid fa-bullseye', desc: '掌握市場調查方法、用戶畫像與商業模式分析，發掘產品機會點。', skills: ['數據驅動產品決策', '產品成長策略與 Growth Hacking'], color: '#F59E0B' },
+      { stage: '階段三', title: '敏捷開發', icon: 'fa-solid fa-arrows-rotate', desc: '實踐 Scrum / Kanban 敏捷流程，學會 Sprint 規劃、站會與回顧。', skills: ['Agile 敏捷開發與 Scrum 實踐', '實戰：從零到一打造 MVP'], color: '#D97706' },
+      { stage: '階段四', title: '成長與營運', icon: 'fa-solid fa-chart-line', desc: '運用數據驅動成長策略，學習 A/B 測試、漏斗分析與用戶留存優化。', skills: ['📦 3 個實戰專案', '📈 數據驅動成長策略', '🤝 利害關係人溝通實務'], color: '#B45309' }
     ]
   }
 }
@@ -1777,8 +1777,8 @@ watch([() => sortedCourses.value.length, () => isTourActive.value, () => current
 
 function onDiagClick(e) {
   if (!isTourActive.value || currentStep.value !== 3) return
-  const btn = e.target.closest('button')
-  if (btn && btn.textContent.includes('開始診斷')) {
+  const el = e.target.closest('[class*="rounded-2xl"]')
+  if (el) {
     diagnosisQuizOpened.value = true
     setTimeout(() => { nextStep() }, 600)
   }
